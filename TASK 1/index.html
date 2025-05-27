@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Image Gallery</h1>
+        
+        <div class="gallery">
+            <div class="gallery-item" data-index="0" data-title="Sunset Archway" data-description="A beautiful sunset through the archway.">
+                <img src="Images/PSX_20240306_222419.jpg" alt="Nature image 1">
+                <div class="img-overlay">🔍</div>
+                <button class="like-btn" title="Like">❤</button>
+                <span class="like-count">0</span>
+            </div>
+            <div class="gallery-item" data-index="1" data-title="Blue Sky Trees" data-description="Clear blue sky with blossoming trees.">
+                <img src="Images/PSX_20240306_223437.jpg" alt="Nature image 2">
+                <div class="img-overlay">🔍</div>
+                <button class="like-btn" title="Like">❤</button>
+                <span class="like-count">0</span>
+            </div>
+            <div class="gallery-item" data-index="2" data-title="Campus Sign" data-description="Signboard at the entrance of the campus.">
+                <img src="Images/PSX_20240306_223756.jpg" alt="Nature image 3">
+                <div class="img-overlay">🔍</div>
+                <button class="like-btn" title="Like">❤</button>
+                <span class="like-count">0</span>
+            </div>
+            <div class="gallery-item" data-index="3" data-title="Lakeside" data-description="A calm lakeside scene.">
+                <img src="Images/PSX_20240306_225014.jpg" alt="Nature image 4">
+                <div class="img-overlay">🔍</div>
+                <button class="like-btn" title="Like">❤</button>
+                <span class="like-count">0</span>
+            </div>
+            
+            
+            <div class="gallery-item" data-index="4" data-title="College Gate" data-description="Night view of the college gate.">
+                <img src="Images/PSX_20240306_225711.jpg" alt="Nature image 5">
+                <div class="img-overlay">🔍</div>
+                <button class="like-btn" title="Like">❤</button>
+                <span class="like-count">0</span>
+            </div>
+            <div class="gallery-item" data-index="5" data-title="Palm Reflection" data-description="Palm trees reflected in the water.">
+                <img src="Images/PSX_20240306_225740.jpg" alt="Nature image 6">
+                <div class="img-overlay">🔍</div>
+                <button class="like-btn" title="Like">❤</button>
+                <span class="like-count">0</span>
+            </div>
+            
+            <div class="gallery-item" data-index="6" data-title="Moon Light" data-description="Night view with glowing Moon">
+                <img src="Images/PSX_20240306_225900.jpg" alt="Nature image 7">
+                <div class="img-overlay">🔍</div>
+                <button class="like-btn" title="Like">❤</button>
+                <span class="like-count">0</span>
+            </div>
+            <div class="gallery-item" data-index="7" data-title="Night Sky" data-description="Night Sky with stars">
+                <img src="Images/PSX_20240306_230317.jpg" alt="Nature image 8">
+                <div class="img-overlay">🔍</div>
+                <button class="like-btn" title="Like">❤</button>
+                <span class="like-count">0</span>
+            </div>
+            <div class="gallery-item" data-index="8" data-title="Birds" data-description="A tree with full of birds">
+                <img src="Images/PSX_20240306_230717.jpg" alt="Nature image 9">
+                <div class="img-overlay">🔍</div>
+                <button class="like-btn" title="Like">❤</button>
+                <span class="like-count">0</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <span class="close">&times;</span>
+            <img id="lightbox-img" src="/placeholder.svg" alt="Lightbox image">
+            <a id="download-btn" class="download-btn" title="Download" download><span>⬇</span></a>
+            <div class="caption" id="caption"></div>
+            <a class="prev" onclick="changeImage(-1)">&#10094;</a>
+            <a class="next" onclick="changeImage(1)">&#10095;</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
